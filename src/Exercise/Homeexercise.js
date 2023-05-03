@@ -1,0 +1,19 @@
+import React, { useEffect, useState } from 'react'
+import { myExercise } from './exercise'
+
+function Homeexercise() {
+    const[exercise,setExercise]=useState([])
+
+    useEffect(()=>{
+        myExercise()
+        .then(({data})=>{
+            setExercise(data)
+            console.log(data);
+        })
+    },[])
+  return (
+    <div>Homeexercise</div>
+  )
+}
+
+export default Homeexercise
