@@ -11,10 +11,10 @@ function App() {
     <Router>
       <Fragment>
         <Routes>
-          <Homeabout/>
-          <Homeexercise/>
-          <Homefit/>
-          <Homecalorie/>
+          <Route path='/drugs' element={<Homeabout/>}/>
+          <Route path='/' element={<Homeexercise/>}/>
+          <Route path='/fitnes' element={<Homefit/>}/>
+          <Route path='/calorie' element={<Homecalorie/>}/>
         </Routes>
       </Fragment>
     </Router>
