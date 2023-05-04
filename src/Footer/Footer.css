@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: serif;
+    background-color: #e0e0e0;
+}
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    padding-top: 2em;
+    background-color:#e0e0e0;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icones{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.whatsapp{
+    margin-right:1em;
+}
+.instagram{
+    margin-right:1em;
+}
+.twitter{
+    margin-right:1em;
+
+}
+.icon{
+    border: 1px solid #5a5858;
+    border-radius: 50%;
+    padding: .1em;
+    background-color:#f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .2em;
+    font-weight: lighter;
+    color: seagreen;
+}
+@media screen and (max-width: 600px) {
+    .whatsapp{
+        margin-right:.8em;
+    }
+    .instagram{
+        margin-right:.8em;
+    }
+    .twitter{
+        margin-right:.8em;
+    
+    }
+
+    
+}
+@media screen and (max-width: 300px) {
+    .whatsapp{
+        margin-right:.5em;
+    }
+    .instagram{
+        margin-right:.5em;
+    }
+    .twitter{
+        margin-right:.5em;
+    
+    }
+    .right{
+        font-size: smaller;
+    }
+    
+}
