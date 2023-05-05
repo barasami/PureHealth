@@ -11,8 +11,12 @@ function Homeexercise() {
             console.log(data);
         })
     },[])
+
+    
   return (
-    <div>Homeexercise</div>
+    <div>
+      
+    </div>
   )
 }
 

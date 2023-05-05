@@ -11,8 +11,25 @@ function Homecalorie() {
             console.log(data);
         })
     },[])
+
+
+    let myCalory=calory?.map((cal)=>{
+      const{name,total_calories,duration_minutes,calories_per_hour}=cal
+      return(
+        <div key={name}>
+          <div>
+            <div>{name}</div>
+            <div>{total_calories}</div>
+            <div>{duration_minutes}</div>
+            <div>{calories_per_hour}</div>
+          </div>
+        </div>
+      )
+    })
   return (
-    <div>Homecalorie</div>
+    <div>
+      {myCalory}
+    </div>
   )
 }
 

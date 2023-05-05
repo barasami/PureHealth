@@ -10,6 +10,8 @@ function Homefit() {
             console.log(data);
         })
     },[])
+
+  
   return (
     <div>Homefit</div>
   )

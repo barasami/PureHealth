@@ -23,7 +23,7 @@ function Footer() {
            
         </div>
         <div className='right'>
-            <p>&copy;Gaminghub ,{today} All Rights Reserved</p>
+            <p>&copy;purehealth ,{today} All Rights Reserved</p>
         </div>
     </div>
   )
