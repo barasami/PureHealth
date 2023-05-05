@@ -13,7 +13,7 @@ function Homeexercise() {
     },[])
 
     let myData=exercise?.map((abj)=>{
-      const{bodypart,equipment,id,name,target,gifurl}=abj
+      const{bodypart,equipment,id,name,target,gifUrl}=abj
       return(
         <div key={id}>
           <div>
@@ -22,7 +22,7 @@ function Homeexercise() {
             <div>{bodypart}</div>
             <div>{equipment}</div>
             <div>
-              <img src={gifurl} alt={name}/>
+              <img src={gifUrl} alt={name}/>
             </div>
           </div>
   

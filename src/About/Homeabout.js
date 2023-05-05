@@ -11,7 +11,22 @@ function Homeabout() {
     })
   },[])
 
- 
+  // let myData=about?.map((dat)=>{
+  //   let alldata=dat.medicine
+  //   const[id,name,price,rank,content,companyName]=alldata
+
+  //   return(
+  //     <div key={id}>
+  //       <div>
+  //         <div>{name}</div>
+  //         <div>{companyName}</div>
+  //         <div>{rank}</div>
+  //         <div>{content}</div>
+  //         <div>{price}</div>
+  //       </div>
+  //     </div>
+  //   )
+  // })
 
   return (
     <div>
