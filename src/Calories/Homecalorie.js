@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { calorieBurn } from './calorie'
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Homecalorie() {
     const[calory,setCalory]=useState([])
+    const[load,setLoad]=useState(false)
 
     useEffect(()=>{
-        calorieBurn()
-        .then(({data})=>{
-            setCalory(data)
-            console.log(data);
-        })
+      setLoad(true)
+      calorieBurn()
+      .then(({data})=>{
+        setCalory(data)
+      })
+      setLoad(false)
     },[])
 
 
@@ -28,7 +31,10 @@ function Homecalorie() {
     })
   return (
     <div>
-      {myCalory}
+      {load ? <CircularProgress/> : 
+      <div> 
+        {myCalory}
+      </div>}
     </div>
   )
 }
