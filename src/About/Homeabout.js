@@ -11,23 +11,7 @@ function Homeabout() {
     })
   },[])
 
-  // let myData=about?.map((abj)=>{
-  //   const{bodypart,equipment,id,name,target,gifurl}=abj
-  //   return(
-  //     <div key={id}>
-  //       <div>
-  //         <div>{name}</div>
-  //         <div>{target}</div>
-  //         <div>{bodypart}</div>
-  //         <div>{equipment}</div>
-  //         <div>
-  //           <img src={gifurl} alt={name}/>
-  //         </div>
-  //       </div>
-
-  //     </div>
-  //   )
-  // })
+ 
 
   return (
     <div>

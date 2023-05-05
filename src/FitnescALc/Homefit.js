@@ -11,9 +11,22 @@ function Homefit() {
         })
     },[])
 
+    // let calcHealth=fitcalc?.map(({info})=>{
+     
+    //   console.log(info);
+    //   return(
+    //     <div>
+    //       {/* <div>{bmi}</div>
+    //       <div>{health}</div> */}
+    //     </div>
+    //   )
+    // })
+
   
   return (
-    <div>Homefit</div>
+    <div>
+      {/* {calcHealth} */}
+    </div>
   )
 }
 
