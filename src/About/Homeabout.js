@@ -11,9 +11,10 @@ function Homeabout() {
     })
   },[])
 
-  // let myData=about?.map((dat)=>{
-  //   let alldata=dat.medicine
-  //   const[id,name,price,rank,content,companyName]=alldata
+  
+
+  // let myData=about?.map(({dat})=>{
+  //   const[id,name,price,rank,content,companyName]=dat
 
   //   return(
   //     <div key={id}>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { fitnesCalc } from './fitness'
+import './Fitness.css'
 
 function Homefit() {
     const[fitcalc,setFitcalc]=useState([])
@@ -11,21 +12,28 @@ function Homefit() {
         })
     },[])
 
-    // let calcHealth=fitcalc?.map(({info})=>{
-     
-    //   console.log(info);
-    //   return(
-    //     <div>
-    //       {/* <div>{bmi}</div>
-    //       <div>{health}</div> */}
-    //     </div>
-    //   )
-    // })
+    let myinFo=fitcalc?.info || {}
+
+    let fitData=Object.entries(myinFo || {})
+    let rData=fitData?.map(([key,val])=>{
+      return(
+        <div key={key} className='Rdata'>
+          <div>
+            {key}:{val}
+          </div>
+        </div>
+      )
+    })
+   
+    
+    
+
 
   
   return (
     <div>
-      {/* {calcHealth} */}
+      <div>{rData}</div>
+      
     </div>
   )
 }
