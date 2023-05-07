@@ -31,7 +31,7 @@ function Homecalorie() {
     })
   return (
     <div>
-      {load ? <CircularProgress/> : 
+      {load ? <CircularProgress color='inherit' className='circular'/> : 
       <div> 
         {myCalory}
       </div>}

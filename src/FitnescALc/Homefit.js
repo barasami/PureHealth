@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { fitnesCalc } from './fitness'
 import './Fitness.css'
+import { CircularProgress } from '@mui/material'
 
 function Homefit() {
     const[fitcalc,setFitcalc]=useState([])
+    const[load,setLoad]=useState(false)
     useEffect(()=>{
+        setLoad(true)
         fitnesCalc()
         .then(({data})=>{
             setFitcalc(data)
-            console.log(data);
         })
+        setLoad(false)
     },[])
 
     
@@ -32,8 +35,10 @@ function Homefit() {
   
   return (
     <div>
-      <div>{rData}</div>
-      
+      {load ? <CircularProgress color='inherit' className='circular'/> : 
+      <div> 
+       {rData}
+      </div>}
     </div>
   )
 }

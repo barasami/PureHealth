@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { myExercise } from './exercise'
+import { CircularProgress } from '@mui/material'
 
 function Homeexercise() {
     const[exercise,setExercise]=useState([])
+    const[load,setLoad]=useState(false)
 
     useEffect(()=>{
+      setLoad(true)
         myExercise()
         .then(({data})=>{
             setExercise(data)
-            console.log(data);
         })
+        setLoad(false)
     },[])
 
     let myData=exercise?.map((abj)=>{
@@ -33,7 +36,10 @@ function Homeexercise() {
     
   return (
     <div>
-      {myData}
+      {load ? <CircularProgress color='inherit' className='circular'/> : 
+      <div> 
+        {myData}
+      </div>}
     </div>
   )
 }
