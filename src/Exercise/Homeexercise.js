@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { myExercise } from './exercise'
 import { CircularProgress } from '@mui/material'
+import './Exercise.css'
 
 function Homeexercise() {
     const[exercise,setExercise]=useState([])
@@ -19,7 +20,7 @@ function Homeexercise() {
     let myData=exercise?.map((abj)=>{
       const{bodypart,equipment,id,name,target,gifUrl}=abj
       return(
-        <div key={id}>
+        <div key={id} className='exercise'>
           <div>
             <div>{name}</div>
             <div>{target}</div>

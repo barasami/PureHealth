@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { myAbout } from './about'
 import { CircularProgress } from '@mui/material'
+import './About.css'
 
 function Homeabout() {
   const[about,setAbout]=useState([])
@@ -20,12 +21,12 @@ function Homeabout() {
   
   let myDrugdata=myDrugs?.map(({name,price,rank,id,content,companyName})=>{
     return(
-      <div key={id}>
-          <div>{name}</div>
-          <div>{companyName}</div>
-          <div>{price}</div>
-          <div>{rank}</div>
-          <div>{content}</div>
+      <div key={id} className='drugs'>
+        <div>{name}</div>
+        <div>{companyName}</div>
+        <div>{price}</div>
+        <div>{rank}</div>
+        <div>{content}</div>
       </div>
     )
   })

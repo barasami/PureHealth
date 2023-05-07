@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { calorieBurn } from './calorie'
 import CircularProgress from '@mui/material/CircularProgress';
+import './Calorie.css'
 
 function Homecalorie() {
     const[calory,setCalory]=useState([])
@@ -20,7 +21,7 @@ function Homecalorie() {
     let myCalory=calory?.map((cal)=>{
       const{name,total_calories,duration_minutes,calories_per_hour}=cal
       return(
-        <div key={name}>
+        <div key={name} className='calorie'>
           <div>
             <div>{name}</div>
             <div>{total_calories}</div>
