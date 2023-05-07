@@ -11,13 +11,13 @@ function Footer() {
         <div className='content'>
             <div className='icones'>
                 <div className='whatsapp'>
-                    <a href="https://wa.me/+254748635972"><WhatsAppIcon color='success' className='icon'/></a> 
+                    <a href="https://wa.me/+254748635972"><WhatsAppIcon color='inherit' className='icon'/></a> 
                 </div>
                 <div className='instagram'>
-                    <a href='https://www.instagram.com/onyangomicheal/?igshid=ZDdkNTZiNTM%3D'><InstagramIcon color='success' className='icon'/></a>
+                    <a href='https://www.instagram.com/onyangomicheal/?igshid=ZDdkNTZiNTM%3D'><InstagramIcon color='inherit' className='icon'/></a>
                 </div>
                 <div className='twitter'>
-                    <a href='https://twitter.com/BarasaOMicheal?t=iUttpH1rbARWB9pgEO8sJw&s=08'><TwitterIcon color='success' className='icon'/></a> 
+                    <a href='https://twitter.com/BarasaOMicheal?t=iUttpH1rbARWB9pgEO8sJw&s=08'><TwitterIcon color='inherit' className='icon'/></a> 
                 </div>
             </div>
            
