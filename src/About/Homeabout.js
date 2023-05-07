@@ -10,8 +10,9 @@ function Homeabout() {
     myAbout()
     .then((data)=>{
       setAbout(data)
+      setLoading(false)
     })
-    setLoading(false)
+    
   },[])
 
 

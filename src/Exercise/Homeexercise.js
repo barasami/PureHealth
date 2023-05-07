@@ -11,8 +11,9 @@ function Homeexercise() {
         myExercise()
         .then(({data})=>{
             setExercise(data)
+            setLoad(false)
         })
-        setLoad(false)
+        
     },[])
 
     let myData=exercise?.map((abj)=>{

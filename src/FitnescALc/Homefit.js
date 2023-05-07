@@ -11,8 +11,9 @@ function Homefit() {
         fitnesCalc()
         .then(({data})=>{
             setFitcalc(data)
+            setLoad(false)
         })
-        setLoad(false)
+        
     },[])
 
     

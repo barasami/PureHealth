@@ -11,8 +11,9 @@ function Homecalorie() {
       calorieBurn()
       .then(({data})=>{
         setCalory(data)
+        setLoad(false)
       })
-      setLoad(false)
+      
     },[])
 
 

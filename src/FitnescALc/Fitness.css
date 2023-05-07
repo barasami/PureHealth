@@ -9,3 +9,8 @@
 .data{
     margin-top: 3em;
 }
+.circular{
+    top: 50%;
+    right: 50%;
+    position: fixed;
+}
