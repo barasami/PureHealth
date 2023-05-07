@@ -12,13 +12,13 @@ function Homefit() {
         })
     },[])
 
-    let myinFo=fitcalc?.info || {}
+    
 
-    let fitData=Object.entries(myinFo || {})
+    let fitData=Object.entries(fitcalc || {})
     let rData=fitData?.map(([key,val])=>{
       return(
         <div key={key} className='Rdata'>
-          <div>
+          <div className='data'>
             {key}:{val}
           </div>
         </div>

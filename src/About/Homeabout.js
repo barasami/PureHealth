@@ -13,25 +13,11 @@ function Homeabout() {
 
   
 
-  // let myData=about?.map(({dat})=>{
-  //   const[id,name,price,rank,content,companyName]=dat
-
-  //   return(
-  //     <div key={id}>
-  //       <div>
-  //         <div>{name}</div>
-  //         <div>{companyName}</div>
-  //         <div>{rank}</div>
-  //         <div>{content}</div>
-  //         <div>{price}</div>
-  //       </div>
-  //     </div>
-  //   )
-  // })
+  
 
   return (
     <div>
-      {/* {myData} */}
+     
     </div>
   )
 }
