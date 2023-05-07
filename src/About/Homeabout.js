@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { myAbout } from './about'
 import { CircularProgress } from '@mui/material'
 import './About.css'
+import Drugform from '../Forms/Drugform'
 
 function Homeabout() {
   const[about,setAbout]=useState([])
@@ -36,6 +37,9 @@ function Homeabout() {
 
   return (
     <div>
+      <div>
+        <Drugform/>
+      </div>
       {load ? <CircularProgress color='inherit' className='circular'/> : 
       <div> 
         {myDrugdata}
