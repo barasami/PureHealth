@@ -10,7 +10,12 @@
     align-items: center;
 }
 .data{
-    margin-top: 3em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 9%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
 }
 .circular{
     top: 50%;

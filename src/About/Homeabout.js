@@ -22,12 +22,14 @@ function Homeabout() {
   
   let myDrugdata=myDrugs?.map(({name,price,rank,id,content,companyName})=>{
     return(
-      <div key={id} className='drugs'>
-        <div>{name}</div>
-        <div>{companyName}</div>
-        <div>{price}</div>
-        <div>{rank}</div>
-        <div>{content}</div>
+      <div key={id}>
+        <div >
+          <div>{name}</div>
+          <div>{companyName}</div>
+          <div>{price}</div>
+          <div>{rank}</div>
+          <div>{content}</div>
+        </div>
       </div>
     )
   })
@@ -36,14 +38,16 @@ function Homeabout() {
   
 
   return (
-    <div>
-      <div>
-        <Drugform/>
+    <div className='drugs'>
+      <div className='drugspage'>
+        <div>
+          <Drugform/>
+        </div>
+        {load ? <CircularProgress color='inherit' className='circular'/> : 
+        <div> 
+          {myDrugdata}
+        </div>}
       </div>
-      {load ? <CircularProgress color='inherit' className='circular'/> : 
-      <div> 
-        {myDrugdata}
-      </div>}
     </div>
   )
 }

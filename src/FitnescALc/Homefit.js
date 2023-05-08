@@ -21,8 +21,8 @@ function Homefit() {
     let fitData=Object.entries(fitcalc || {})
     let rData=fitData?.map(([key,val])=>{
       return(
-        <div key={key} className='Rdata'>
-          <div className='data'>
+        <div key={key}>
+          <div >
             {key}:{val}
           </div>
         </div>
@@ -35,11 +35,16 @@ function Homefit() {
 
   
   return (
-    <div>
-      {load ? <CircularProgress color='inherit' className='circular'/> : 
-      <div> 
-       {rData}
-      </div>}
+    <div  className='Rdata'>
+      <div className='data'>
+        <div>hello</div>
+        <div>
+          {load ? <CircularProgress color='inherit' className='circular'/> : 
+          <div> 
+            {rData}
+          </div>}
+        </div>
+      </div>
     </div>
   )
 }

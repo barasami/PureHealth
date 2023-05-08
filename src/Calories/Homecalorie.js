@@ -21,7 +21,7 @@ function Homecalorie() {
     let myCalory=calory?.map((cal)=>{
       const{name,total_calories,duration_minutes,calories_per_hour}=cal
       return(
-        <div key={name} className='calorie'>
+        <div key={name}>
           <div>
             <div>{name}</div>
             <div>{total_calories}</div>
@@ -32,11 +32,16 @@ function Homecalorie() {
       )
     })
   return (
-    <div>
-      {load ? <CircularProgress color='inherit' className='circular'/> : 
-      <div> 
-        {myCalory}
-      </div>}
+    <div className='calorie'>
+      <div className='caloriedata'>
+        <div>hello</div>
+        <div>
+          {load ? <CircularProgress color='inherit' className='circular'/> : 
+          <div> 
+            {myCalory}
+          </div>}
+        </div>
+      </div>
     </div>
   )
 }
