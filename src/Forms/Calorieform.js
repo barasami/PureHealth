@@ -2,7 +2,16 @@ import React from 'react'
 
 function Calorieform() {
   return (
-    <div>Calorieform</div>
+    <div>
+        <div>
+            <div>
+                <input type='text' required placeholder='activity' />
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
   )
 }
 

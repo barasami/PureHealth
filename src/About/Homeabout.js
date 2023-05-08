@@ -40,7 +40,7 @@ function Homeabout() {
   return (
     <div className='drugs'>
       <div className='drugspage'>
-        <div>
+        <div className='myinputs'>
           <Drugform/>
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 

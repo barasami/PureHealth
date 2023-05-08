@@ -38,7 +38,7 @@ function Homefit() {
   return (
     <div  className='Rdata'>
       <div className='data'>
-        <div>
+        <div className='myinputs'>
           <Fitnessform/>
         </div>
         <div>

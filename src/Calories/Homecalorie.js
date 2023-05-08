@@ -35,7 +35,7 @@ function Homecalorie() {
   return (
     <div className='calorie'>
       <div className='caloriedata'>
-        <div>
+        <div className='myinputs'>
           <Calorieform/>
         </div>
         <div>
