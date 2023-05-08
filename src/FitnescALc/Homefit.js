@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { fitnesCalc } from './fitness'
 import './Fitness.css'
 import { CircularProgress } from '@mui/material'
+import Fitnessform from '../Forms/Fitnessform'
 
 function Homefit() {
     const[fitcalc,setFitcalc]=useState([])
@@ -37,7 +38,9 @@ function Homefit() {
   return (
     <div  className='Rdata'>
       <div className='data'>
-        <div>hello</div>
+        <div>
+          <Fitnessform/>
+        </div>
         <div>
           {load ? <CircularProgress color='inherit' className='circular'/> : 
           <div> 

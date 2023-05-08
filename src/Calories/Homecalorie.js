@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { calorieBurn } from './calorie'
 import CircularProgress from '@mui/material/CircularProgress';
 import './Calorie.css'
+import Calorieform from '../Forms/Calorieform';
 
 function Homecalorie() {
     const[calory,setCalory]=useState([])
@@ -34,7 +35,9 @@ function Homecalorie() {
   return (
     <div className='calorie'>
       <div className='caloriedata'>
-        <div>hello</div>
+        <div>
+          <Calorieform/>
+        </div>
         <div>
           {load ? <CircularProgress color='inherit' className='circular'/> : 
           <div> 
