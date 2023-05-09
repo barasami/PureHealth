@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.inputs{
+    padding: .4em;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: .3em;
+    justify-content: stretch;
+    width: 100%;
+    color: black;
+}
+.btn{
+    padding: .3em;
+    color: black;
+    border-radius: .2em;
+    border: none;
+    background-color:wheat;
+    justify-content: stretch;
+    width: 100%;
+}
+.number{
+    margin-bottom: .4em;
+    justify-content: stretch;
+    width: 100%;
+}
+.gender{
+    margin-bottom: .4em;
+    justify-content: stretch;
+    width: 100%; 
+}
+.mybtn{
+    margin-top: .5em;
+    justify-content: stretch;
+    width: 100%;
+}
+.mytext{
+    justify-content: stretch;
+    width: 100%;
+
+}

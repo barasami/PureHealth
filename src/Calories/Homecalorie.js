@@ -8,6 +8,10 @@ function Homecalorie() {
     const[calory,setCalory]=useState([])
     const[load,setLoad]=useState(false)
 
+    const allInput=(input)=>{
+      console.log(input);
+    }
+
     useEffect(()=>{
       setLoad(true)
       calorieBurn()
@@ -36,7 +40,7 @@ function Homecalorie() {
     <div className='calorie'>
       <div className='caloriedata'>
         <div className='myinputs'>
-          <Calorieform/>
+          <Calorieform allCalory={allInput}/>
         </div>
         <div>
           {load ? <CircularProgress color='inherit' className='circular'/> : 

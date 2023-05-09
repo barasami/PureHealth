@@ -7,6 +7,10 @@ import Drugform from '../Forms/Drugform'
 function Homeabout() {
   const[about,setAbout]=useState([])
   const[load,setLoading]=useState(false)
+
+  const checkDrugs=(drugs)=>{
+    console.log(drugs);
+  }
   useEffect(()=>{
     setLoading(true)
     myAbout()
@@ -41,7 +45,7 @@ function Homeabout() {
     <div className='drugs'>
       <div className='drugspage'>
         <div className='myinputs'>
-          <Drugform/>
+          <Drugform allDrugs={checkDrugs}/>
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
         <div> 

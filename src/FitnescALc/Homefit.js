@@ -7,6 +7,13 @@ import Fitnessform from '../Forms/Fitnessform'
 function Homefit() {
     const[fitcalc,setFitcalc]=useState([])
     const[load,setLoad]=useState(false)
+
+    const allMetrics=({gender,height,weight,age})=>{
+      console.log(gender);
+      console.log(height);
+      console.log(weight);
+      console.log(age);
+    }
     useEffect(()=>{
         setLoad(true)
         fitnesCalc()
@@ -39,7 +46,7 @@ function Homefit() {
     <div  className='Rdata'>
       <div className='data'>
         <div className='myinputs'>
-          <Fitnessform/>
+          <Fitnessform mymetrics={allMetrics}/>
         </div>
         <div>
           {load ? <CircularProgress color='inherit' className='circular'/> : 
