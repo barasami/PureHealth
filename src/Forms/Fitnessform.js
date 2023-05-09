@@ -2,7 +2,7 @@ import React from 'react'
 import './Forms.css'
 import { useState } from 'react'
 
-function Fitnessform({mymetrics}) {
+function Fitnessform() {
 
     const[gender,setGender]=useState('')
     const[height,setHeight]=useState('')
@@ -10,16 +10,6 @@ function Fitnessform({mymetrics}) {
     const[age,setAge]=useState()
     const submitMe=(e)=>{
         e.preventDefault()
-
-        if(!gender || gender === '')
-        return
-        else{
-            mymetrics(gender,height,weight,age)
-            setAge(' ')
-            setGender(' ')
-            setWeight(' ')
-            setHeight( ' ')
-        }
     }
   return (
     <div>
