@@ -13,7 +13,7 @@ function Calorieform({allCalory}) {
         setCalory('')
     }
   return (
-    <div>
+    <div className='formwrap'>
         <form onSubmit={submitMe}>
             <div className='mytext'>
                 <input type='text' required placeholder='activity' className='inputs' value={calory}

@@ -14,9 +14,9 @@ function App() {
       <Fragment>
         <Navbar/>
         <Routes>
-          <Route path='/drugs' element={<Homeabout/>}/>
+          <Route path='/bmi' element={<Homeabout/>}/>
           <Route path='/' element={<Homeexercise/>}/>
-          <Route path='/fitnes' element={<Homefit/>}/>
+          <Route path='/muscles' element={<Homefit/>}/>
           <Route path='/calorie' element={<Homecalorie/>}/>
         </Routes>
         <Footer/>

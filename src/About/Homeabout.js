@@ -8,7 +8,7 @@ function Homeabout() {
   const[about,setAbout]=useState([])
   const[load,setLoading]=useState(false)
 
-  //weight and height
+  //weight and height from Api
   const[weigt,setWeight]=useState('65')
   const[height,setHeight]=useState('167')
 

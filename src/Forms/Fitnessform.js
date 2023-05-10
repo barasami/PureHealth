@@ -13,7 +13,7 @@ function Fitnessform({mymetrics}) {
         targetMuscle(' ')
     }
   return (
-    <div>
+    <div className='formwrap'>
         <form onSubmit={submitMe}>
             <div className='gender'>
                 <input type='text' required placeholder='Target Muscle' className='inputs' 

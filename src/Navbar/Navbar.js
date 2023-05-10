@@ -19,8 +19,8 @@ function Navbar() {
         <div className={menu ? 'Dontshow' : 'show'}>
             <ul>
                 <li><Link to='/'>Home</Link></li>
-                <li><Link to='/drugs'>Bmi</Link></li>
-                <li><Link to='/fitnes'>Muscles</Link></li>
+                <li><Link to='/bmi'>Bmi</Link></li>
+                <li><Link to='/muscles'>Muscles</Link></li>
                 <li><Link to='/calorie'>Calorie</Link></li>
                 
             </ul>

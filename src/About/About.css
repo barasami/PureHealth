@@ -21,3 +21,24 @@
 .myinputs{
     margin-bottom: 3em;
 }
+
+@media screen and (max-width:1200px) {
+    .drugspage{
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 12%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+   
+    
+}
+
+@media screen and (max-width:300px) {
+    
+}
