@@ -7,21 +7,27 @@ import Drugform from '../Forms/Drugform'
 function Homeabout() {
   const[about,setAbout]=useState([])
   const[load,setLoading]=useState(false)
-  const[term,setTerm]=useState('para')
 
-  const checkDrugs=(drugs)=>{
-    setTerm(drugs);
+  //weight and height
+  const[weigt,setWeight]=useState('65')
+  const[height,setHeight]=useState('167')
+
+  const checkWeight=(drugs)=>{
+    setWeight(drugs);
+  }
+  const checkHeight=(drugs)=>{
+    setHeight(drugs);
   }
   useEffect(()=>{
     setLoading(true)
-    myAbout(term)
+    myAbout(weigt,height)
     .then(({data})=>{
       setAbout(data)
       console.log(data);
       setLoading(false)
     })
     
-  },[term])
+  },[weigt,height])
 
   let dat=about?.info
   let myresults=Object.entries(dat || {})
@@ -44,7 +50,9 @@ function Homeabout() {
     <div className='drugs'>
       <div className='drugspage'>
         <div className='myinputs'>
-          <Drugform allDrugs={checkDrugs}/>
+          <Drugform 
+          checkWeight={checkWeight}
+          checkHeight={checkHeight}/>
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
         <div> 
