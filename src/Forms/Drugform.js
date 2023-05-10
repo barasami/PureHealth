@@ -26,7 +26,7 @@ function Drugform({checkWeight,checkHeight}) {
              onChange={(e)=>setMyheight(e.target.value)} 
             />
           </div>
-          <div className='mytext'>
+          <div className='myweight'>
             <input type='number' required placeholder='Weight' className='inputs'
               value={myweight}
              onChange={(e)=>setMyweight(e.target.value)} 

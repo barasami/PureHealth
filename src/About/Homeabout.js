@@ -12,11 +12,11 @@ function Homeabout() {
   const[weigt,setWeight]=useState('65')
   const[height,setHeight]=useState('167')
 
-  const checkWeight=(drugs)=>{
-    setWeight(drugs);
+  const checkWeight=(weight)=>{
+    setWeight(weight);
   }
-  const checkHeight=(drugs)=>{
-    setHeight(drugs);
+  const checkHeight=(height)=>{
+    setHeight(height);
   }
   useEffect(()=>{
     setLoading(true)

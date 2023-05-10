@@ -26,6 +26,12 @@
     justify-content: stretch;
     width: 100%;
 }
+.myweight{
+    margin-top: .5em;
+    justify-content: stretch;
+    width: 100%; 
+
+}
 .gender{
     margin-bottom: .4em;
     justify-content: stretch;
