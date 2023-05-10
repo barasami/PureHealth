@@ -8,10 +8,8 @@ function Drugform({allDrugs}) {
     e.preventDefault()
     if(!drugname || drugname ==='')
     return
-    else{
-      allDrugs(drugname)
-      setDrugname(' ')
-    }
+    allDrugs(drugname)
+    setDrugname(' ')
   }
   return (
     <div>

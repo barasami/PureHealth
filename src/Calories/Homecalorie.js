@@ -7,20 +7,21 @@ import Calorieform from '../Forms/Calorieform';
 function Homecalorie() {
     const[calory,setCalory]=useState([])
     const[load,setLoad]=useState(false)
+    const[activity,setActivity]=useState('skiing')
 
     const allInput=(input)=>{
-      console.log(input);
+      setActivity(input);
     }
 
     useEffect(()=>{
       setLoad(true)
-      calorieBurn()
+      calorieBurn(activity)
       .then(({data})=>{
         setCalory(data)
         setLoad(false)
       })
       
-    },[])
+    },[activity])
 
 
     let myCalory=calory?.map((cal)=>{

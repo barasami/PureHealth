@@ -7,19 +7,20 @@ import Drugform from '../Forms/Drugform'
 function Homeabout() {
   const[about,setAbout]=useState([])
   const[load,setLoading]=useState(false)
+  const[term,setTerm]=useState('para')
 
   const checkDrugs=(drugs)=>{
-    console.log(drugs);
+    setTerm(drugs);
   }
   useEffect(()=>{
     setLoading(true)
-    myAbout()
+    myAbout(term)
     .then((data)=>{
       setAbout(data)
       setLoading(false)
     })
     
-  },[])
+  },[term])
 
 
   let myDrugs=about?.medicines

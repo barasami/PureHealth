@@ -7,12 +7,10 @@ function Calorieform({allCalory}) {
     const[calory,setCalory]=useState('')
     const submitMe=(e)=>{
         e.preventDefault()
-        if(calory === null || calory === '')
+        if(!calory|| calory === '')
         return
-        else{
-            allCalory(calory)
-            setCalory('')
-        }
+        allCalory(calory)
+        setCalory('')
     }
   return (
     <div>

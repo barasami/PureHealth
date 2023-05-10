@@ -16,6 +16,7 @@ function Homefit() {
         fitnesCalc()
         .then(({data})=>{
             setFitcalc(data)
+            console.log(data);
             setLoad(false)
         })
         
