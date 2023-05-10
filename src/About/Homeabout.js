@@ -15,29 +15,27 @@ function Homeabout() {
   useEffect(()=>{
     setLoading(true)
     myAbout(term)
-    .then((data)=>{
+    .then(({data})=>{
       setAbout(data)
+      console.log(data);
       setLoading(false)
     })
     
   },[term])
 
-
-  let myDrugs=about?.medicines
-  
-  let myDrugdata=myDrugs?.map(({name,price,rank,id,content,companyName})=>{
+  let dat=about?.info
+  let myresults=Object.entries(dat || {})
+  let fReslt=myresults.map(([key,value])=>{
     return(
-      <div key={id}>
-        <div >
-          <div>{name}</div>
-          <div>{companyName}</div>
-          <div>{price}</div>
-          <div>{rank}</div>
-          <div>{content}</div>
+      <div>
+        <div>
+          {key} : {value}
         </div>
       </div>
     )
   })
+
+
   
 
   
@@ -50,7 +48,7 @@ function Homeabout() {
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
         <div> 
-          {myDrugdata}
+          {fReslt}
         </div>}
       </div>
     </div>

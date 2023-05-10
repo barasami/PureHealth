@@ -7,27 +7,28 @@ import Fitnessform from '../Forms/Fitnessform'
 function Homefit() {
     const[fitcalc,setFitcalc]=useState([])
     const[load,setLoad]=useState(false)
+    const[type,setType]=useState('biceps')
 
     const allMetrics=(coolData)=>{
-      console.log(coolData);
+      setType(coolData);
     }
     useEffect(()=>{
         setLoad(true)
-        fitnesCalc()
+        fitnesCalc(type)
         .then(({data})=>{
             setFitcalc(data)
             console.log(data);
             setLoad(false)
         })
         
-    },[])
+    },[type])
 
     
 
     const tarMuscle=fitcalc?.map((data)=>{
-      const{difficulty,equipment,instructions,muscle,name,type,id}=data
+      const{difficulty,equipment,instructions,muscle,name,type}=data
       return(
-        <div key={id}>
+        <div key={name}>
           <div>
             <div>{difficulty}</div>
             <div>{equipment}</div>
