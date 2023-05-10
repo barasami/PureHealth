@@ -8,8 +8,8 @@ function Homefit() {
     const[fitcalc,setFitcalc]=useState([])
     const[load,setLoad]=useState(false)
 
-    const allMetrics=()=>{
-      
+    const allMetrics=(coolData)=>{
+      console.log(coolData);
     }
     useEffect(()=>{
         setLoad(true)
@@ -24,15 +24,21 @@ function Homefit() {
 
     
 
-    let fitData=Object.entries(fitcalc || {})
-    let rData=fitData?.map(([key,val])=>{
+    const tarMuscle=fitcalc?.map((data)=>{
+      const{difficulty,equipment,instructions,muscle,name,type,id}=data
       return(
-        <div key={key}>
-          <div >
-            {key}:{val}
+        <div key={id}>
+          <div>
+            <div>{difficulty}</div>
+            <div>{equipment}</div>
+            <div>{instructions}</div>
+            <div>{muscle}</div>
+            <div>{name}</div>
+            <div>{type}</div>
           </div>
         </div>
       )
+
     })
    
     
@@ -49,7 +55,7 @@ function Homefit() {
         <div>
           {load ? <CircularProgress color='inherit' className='circular'/> : 
           <div> 
-            {rData}
+            {tarMuscle}
           </div>}
         </div>
       </div>

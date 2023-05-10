@@ -1,20 +1,15 @@
 import axios from 'axios';
 
-const Url='https://health-calculator-api.p.rapidapi.com/bodyfat/imperial'
-
+const Url='https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises'
 
 const options = {
-  params: {
-    gender: 'male',
-    height: '77',
-    weight: '180',
-    age: '26'
-  },
+  params: {muscle: 'biceps'},
   headers: {
     'X-RapidAPI-Key': '87f0c01e35msh8962c83c8aef89ap1e9713jsnbf3fe9f2f818',
-    'X-RapidAPI-Host': 'health-calculator-api.p.rapidapi.com'
+    'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
   }
 };
+
 
 
 
