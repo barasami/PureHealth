@@ -34,7 +34,7 @@ function Homeabout() {
   let fReslt=myresults.map(([key,value])=>{
     return(
       <div>
-        <div>
+        <div className='coolresults'>
           {key} : {value}
         </div>
       </div>

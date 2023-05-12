@@ -19,7 +19,7 @@ function Drugform({checkWeight,checkHeight}) {
   }
   return (
     <div className='formwrap'>
-        <form onSubmit={submitMe}>
+        <form onSubmit={submitMe} className='form'>
           <div className='mytext'>
             <input type='number' required placeholder='Height' className='inputs'
               value={myheight}

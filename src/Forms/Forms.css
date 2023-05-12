@@ -48,7 +48,25 @@
 
 }
 .formwrap{
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.form{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:rgb(226, 220, 220);
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    
 }
 @media screen and (max-width:600px) {
    

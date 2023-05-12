@@ -19,8 +19,11 @@
     margin-bottom: 8%;
 }
 .myinputs{
-    margin-bottom: 3em;
+    margin-bottom: 3em; 
+    height: 20vh;  
 }
+
+
 
 @media screen and (max-width:1200px) {
     .drugspage{
