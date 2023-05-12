@@ -21,13 +21,13 @@ function Drugform({checkWeight,checkHeight}) {
     <div className='formwrap'>
         <form onSubmit={submitMe} className='form'>
           <div className='mytext'>
-            <input type='number' required placeholder='Height' className='inputs'
+            <input type='number' required placeholder='Height...' className='inputs'
               value={myheight}
              onChange={(e)=>setMyheight(e.target.value)} 
             />
           </div>
           <div className='myweight'>
-            <input type='number' required placeholder='Weight' className='inputs'
+            <input type='number' required placeholder='Weight...' className='inputs'
               value={myweight}
              onChange={(e)=>setMyweight(e.target.value)} 
             />

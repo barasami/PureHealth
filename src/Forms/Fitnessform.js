@@ -14,9 +14,9 @@ function Fitnessform({mymetrics}) {
     }
   return (
     <div className='formwrap'>
-        <form onSubmit={submitMe}>
+        <form onSubmit={submitMe} className='form'>
             <div className='gender'>
-                <input type='text' required placeholder='Target Muscle' className='inputs' 
+                <input type='text' required placeholder='Targeted Muscle...' className='inputs' 
                 value={muscle}
                 onChange={(e)=>targetMuscle(e.target.value)} />
             </div>

@@ -14,9 +14,9 @@ function Calorieform({allCalory}) {
     }
   return (
     <div className='formwrap'>
-        <form onSubmit={submitMe}>
+        <form onSubmit={submitMe} className='form'>
             <div className='mytext'>
-                <input type='text' required placeholder='activity' className='inputs' value={calory}
+                <input type='text' required placeholder='Activity...' className='inputs' value={calory}
                 onChange={(e)=>setCalory(e.target.value)} />
             </div>
             <div className='mybtn'>
