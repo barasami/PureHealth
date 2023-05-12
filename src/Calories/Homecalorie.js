@@ -29,10 +29,14 @@ function Homecalorie() {
       return(
         <div key={name}>
           <div>
-            <div>{name}</div>
-            <div>{total_calories}</div>
-            <div>{duration_minutes}</div>
-            <div>{calories_per_hour}</div>
+            <div>
+              Activity {name}</div>
+            <div>
+              Total Calories {total_calories}</div>
+            <div>
+              Duration {duration_minutes}Minutes</div>
+            <div>
+              Calory in an Hour{calories_per_hour}</div>
           </div>
         </div>
       )
@@ -43,7 +47,7 @@ function Homecalorie() {
         <div className='myinputs'>
           <Calorieform allCalory={allInput}/>
         </div>
-        <div>
+        <div className='mycalorie'>
           {load ? <CircularProgress color='inherit' className='circular'/> : 
           <div> 
             {myCalory}
