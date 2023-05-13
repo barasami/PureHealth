@@ -20,7 +20,7 @@ function Homeexercise() {
     let myData=exercise?.map((abj)=>{
       const{bodypart,equipment,id,name,target,gifUrl}=abj
       return(
-        <div key={id} className='exercise'>
+        <div key={id}>
           <div>
             <div>{name}</div>
             <div>{target}</div>
@@ -37,11 +37,13 @@ function Homeexercise() {
 
     
   return (
-    <div>
-      {load ? <CircularProgress color='inherit' className='circular'/> : 
-      <div> 
-        {myData}
-      </div>}
+    <div className='coolexercise'>
+      <div className='exercisedata'>
+        {load ? <CircularProgress color='inherit' className='circular'/> : 
+        <div className='exercisefinal'> 
+          {myData}
+        </div>}
+      </div>
     </div>
   )
 }

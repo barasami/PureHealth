@@ -6,10 +6,18 @@
 
 }
 
-.exercise{
+.coolexercise{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../../public/images/muscle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.exercisefinal{
+    margin-top: 5%;
 }
 
 @media screen and (max-width:600px) {

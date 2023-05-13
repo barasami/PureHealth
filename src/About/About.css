@@ -2,12 +2,19 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+   
     
 }
 .drugs{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../../public/images/activity.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
     
 }
 .drugspage{
@@ -17,6 +24,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 8%;
+    
 }
 .myinputs{
     margin-bottom: 3em; 
