@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
     
 }
 .Rdata{
@@ -12,7 +13,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 .data{
     margin-left: 10%;

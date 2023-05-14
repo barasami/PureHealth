@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    
     
 }
 .form{
@@ -60,7 +60,6 @@
     padding-right: 35%;
     align-items: stretch;
     width: 100%;
-    position: fixed;
     justify-content: center;
     
 }
