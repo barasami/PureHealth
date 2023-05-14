@@ -20,22 +20,22 @@ function Homeexercise() {
     let myData=exercise?.map((abj)=>{
       const{bodypart,equipment,id,name,target,gifUrl}=abj
       return(
-        <Grid key={id} item lg={4} sm={8} xs={12}>
+        <Grid key={id} item lg={4} sm={8} xs={12} className='grid'>
           <Grid elevation={10}>
-            <Typography variant='h6' color='seagreen'>
+            <Typography variant='h6' color='black' className='title'>
               {name}
             </Typography>
-            <Typography variant='h8' color='green'>
+            <Typography variant='h8' color='black'>
               Target {target}
             </Typography>
-            <Typography variant='h8' color='green'>
+            <Typography variant='h8' color='black'>
               Body part{bodypart}
             </Typography>
-            <Typography color='green'>
+            <Typography color='black'>
               Equipment {equipment}
             </Typography>
             <Box>
-              <img src={gifUrl} alt={name}/>
+              <img src={gifUrl} alt={name} className='myimg'/>
             </Box>
           </Grid >
   

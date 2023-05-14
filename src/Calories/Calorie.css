@@ -9,10 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../../public/images/weightloss.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
 .caloriedata{
@@ -25,6 +22,9 @@
 }
 .myinputs{
     margin-bottom: 3em;
+}
+.calorydata{
+    margin-bottom: .5em;
 }
 @media screen and (max-width:600px) {
    

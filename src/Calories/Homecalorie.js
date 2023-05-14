@@ -3,6 +3,7 @@ import { calorieBurn } from './calorie'
 import CircularProgress from '@mui/material/CircularProgress';
 import './Calorie.css'
 import Calorieform from '../Forms/Calorieform';
+import { Paper, Typography } from '@mui/material';
 
 function Homecalorie() {
     const[calory,setCalory]=useState([])
@@ -27,18 +28,20 @@ function Homecalorie() {
     let myCalory=calory?.map((cal)=>{
       const{name,total_calories,duration_minutes,calories_per_hour}=cal
       return(
-        <div key={name}>
-          <div>
-            <div>
-              Activity {name}</div>
-            <div>
-              Total Calories {total_calories}</div>
-            <div>
-              Duration {duration_minutes}Minutes</div>
-            <div>
-              Calory in an Hour{calories_per_hour}</div>
-          </div>
-        </div>
+        <Paper elevation={3} key={name} className='calorydata'>
+            <Typography color='seagreen' variant='h6' p={1}>
+              Activity {name}
+            </Typography>
+            <Typography color='seagreen'p={1} variant='h8'>
+              Total Calories {total_calories}
+            </Typography>
+            <Typography color='seagreen' p={1} variant='h8'>
+              Duration {duration_minutes}Minutes
+            </Typography>
+            <Typography color='seagreen' p={1} variant='h8'>
+              Calory in an Hour{calories_per_hour}
+            </Typography>
+        </Paper>
       )
     })
   return (

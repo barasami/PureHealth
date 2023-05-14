@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { myAbout } from './about'
-import { CircularProgress } from '@mui/material'
+import { CircularProgress, Paper } from '@mui/material'
 import './About.css'
 import Drugform from '../Forms/Drugform'
 
@@ -33,11 +33,9 @@ function Homeabout() {
   let myresults=Object.entries(dat || {})
   let fReslt=myresults.map(([key,value])=>{
     return(
-      <div>
-        <div className='coolresults'>
-          {key} : {value}
-        </div>
-      </div>
+      <Paper elevation={2} className='coolresults'>
+        {key} : {value}
+      </Paper>
     )
   })
 
@@ -55,9 +53,9 @@ function Homeabout() {
           checkHeight={checkHeight}/>
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
-        <div> 
+        <Paper> 
           {fReslt}
-        </div>}
+        </Paper>}
       </div>
     </div>
   )

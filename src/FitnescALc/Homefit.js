@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { fitnesCalc } from './fitness'
 import './Fitness.css'
-import { CircularProgress } from '@mui/material'
+import { CircularProgress, Paper, Typography } from '@mui/material'
 import Fitnessform from '../Forms/Fitnessform'
 
 function Homefit() {
@@ -28,16 +28,26 @@ function Homefit() {
     const tarMuscle=fitcalc?.map((data)=>{
       const{difficulty,equipment,instructions,muscle,name,type}=data
       return(
-        <div key={name}>
-          <div>
-            <div>{difficulty}</div>
-            <div>{equipment}</div>
-            <div>{instructions}</div>
-            <div>{muscle}</div>
-            <div>{name}</div>
-            <div>{type}</div>
-          </div>
-        </div>
+        <Paper key={name} className='getfit'>
+          <Typography color='seagreen' p={1}>
+            {difficulty}
+          </Typography>
+          <Typography color='seagreen' p={1}>
+            {equipment}
+          </Typography>
+          <Typography color='seagreen' p={1}>
+            {instructions}
+          </Typography>
+          <Typography color='seagreen' p={1}>
+            {muscle}
+          </Typography>
+          <Typography color='seagreen' p={1}>
+            {name}
+          </Typography>
+          <Typography color='seagreen' p={1}>
+            {type}
+          </Typography>
+        </Paper>
       )
 
     })
