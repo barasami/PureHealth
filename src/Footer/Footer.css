@@ -37,7 +37,7 @@
     border: 1px solid #616161;
     border-radius: 50%;
     padding: .1em;
-    background-color:#e0e0e0;
+    background-color:#616161;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@
     justify-content: center;
     margin-bottom: .2em;
     font-weight: lighter;
-    color:#e0e0e0;
+    color:#616161 ;
 }
 @media screen and (max-width: 600px) {
     .whatsapp{

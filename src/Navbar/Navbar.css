@@ -11,6 +11,7 @@
     font-size: large;
     text-transform: uppercase;
     
+    
 }
 .ul,li,a:active,.ul,li,a:hover{
     color: #616161;
@@ -22,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     padding: .23em;
-    background-color:#e0e0e0;
+    /* background-color:#e0e0e0; */
     position: fixed;
     width: 100%;
     
