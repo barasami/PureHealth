@@ -30,13 +30,12 @@ function Homeabout() {
   },[weigt,height])
 
   let dat=about?.info
+
   let myresults=Object.entries(dat || {})
-  let fReslt=myresults.map(([key,value])=>{
+  const Rdata=myresults?.map(([key,value])=>{
     return(
       <div>
-        <div>
-          {key} : {value}
-        </div>
+        {key} : {value}
       </div>
     )
   })
@@ -56,8 +55,9 @@ function Homeabout() {
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
         <div> 
-          {fReslt}
+          {Rdata}
         </div>}
+        
       </div>
     </div>
   )

@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+
    
     
 }
@@ -24,7 +25,7 @@
 }
 .myinputs{
     margin-bottom: 3em; 
-    height: 20vh;  
+    
 }
 
 
