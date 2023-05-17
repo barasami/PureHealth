@@ -34,7 +34,7 @@ function Homeabout() {
   let myresults=Object.entries(dat || {})
   const Rdata=myresults?.map(([key,value])=>{
     return(
-      <div className='bmi'>
+      <div className='bmi' key={value}>
         {key} : {value}
       </div>
     )

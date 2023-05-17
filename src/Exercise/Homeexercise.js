@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { myExercise } from './exercise'
-import { Box, CircularProgress, Container, Grid, Paper, Typography } from '@mui/material'
+import { Box, CircularProgress, Container, Grid, Typography } from '@mui/material'
 import './Exercise.css'
 
 function Homeexercise() {
