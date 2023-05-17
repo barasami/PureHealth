@@ -29,22 +29,22 @@ function Homefit() {
       const{difficulty,equipment,instructions,muscle,name,type}=data
       return(
         <Paper key={name} className='getfit'>
-          <Typography color='seagreen' p={1}>
+          <Typography color='#212121' p={1} className='title'>
             {difficulty}
           </Typography>
-          <Typography color='seagreen' p={1}>
+          <Typography  p={1}>
             {equipment}
           </Typography>
-          <Typography color='seagreen' p={1}>
+          <Typography  p={1}>
             {instructions}
           </Typography>
-          <Typography color='seagreen' p={1}>
+          <Typography  p={1}>
             {muscle}
           </Typography>
-          <Typography color='seagreen' p={1}>
+          <Typography  p={1}>
             {name}
           </Typography>
-          <Typography color='seagreen' p={1}>
+          <Typography  p={1}>
             {type}
           </Typography>
         </Paper>

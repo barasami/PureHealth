@@ -29,18 +29,26 @@ function Homecalorie() {
       const{name,total_calories,duration_minutes,calories_per_hour}=cal
       return(
         <Paper elevation={3} key={name} className='calorydata'>
-            <Typography color='seagreen' variant='h6' p={1}>
-              Activity {name}
-            </Typography>
-            <Typography color='seagreen'p={1} variant='h8'>
-              Total Calories {total_calories}
-            </Typography>
-            <Typography color='seagreen' p={1} variant='h8'>
-              Duration {duration_minutes}Minutes
-            </Typography>
-            <Typography color='seagreen' p={1} variant='h8'>
-              Calory in an Hour{calories_per_hour}
-            </Typography>
+            <div  className='mydivs'>
+              <Typography color='#212121' variant='h6' p={1}>
+                {name}
+              </Typography>
+            </div>
+            <div className='mydivs'>
+              <Typography p={1} variant='h8'>
+                Total Calories : <span className='myresults'>{total_calories}</span> 
+              </Typography>
+            </div>
+            <div className='mydivs'>
+              <Typography  p={1} variant='h8'>
+                Duration : <span className='myresults'>{duration_minutes}Minutes</span>
+              </Typography>
+            </div>
+            <div className='mydivs'>
+              <Typography  p={1} variant='h8'>
+                Calory in an Hour : <span className='myresults'>{calories_per_hour}</span>
+              </Typography>
+            </div>
         </Paper>
       )
     })
