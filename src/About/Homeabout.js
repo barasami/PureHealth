@@ -34,7 +34,7 @@ function Homeabout() {
   let myresults=Object.entries(dat || {})
   const Rdata=myresults?.map(([key,value])=>{
     return(
-      <div>
+      <div className='bmi'>
         {key} : {value}
       </div>
     )
@@ -54,7 +54,7 @@ function Homeabout() {
           checkHeight={checkHeight}/>
         </div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
-        <div> 
+        <div className='bmidata'> 
           {Rdata}
         </div>}
         

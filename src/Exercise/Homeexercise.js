@@ -21,7 +21,7 @@ function Homeexercise() {
       const{bodypart,equipment,id,name,target,gifUrl}=abj
       return(
         <Grid key={id} item lg={4} sm={8} xs={12} className='grid'>
-          <Grid elevation={10}>
+          <Grid elevation={10} className='myexercise'>
             <Typography variant='h6' color='black' className='title'>
               {name}
             </Typography>
@@ -34,7 +34,7 @@ function Homeexercise() {
             <Typography color='black'>
               Equipment {equipment}
             </Typography>
-            <Box>
+            <Box className='images'>
               <img src={gifUrl} alt={name} className='myimg'/>
             </Box>
           </Grid >

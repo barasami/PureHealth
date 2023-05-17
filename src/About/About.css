@@ -26,8 +26,19 @@
     
 }
 .myinputs{
+    margin-top: 10%;
     margin-bottom: 3em; 
     
+}
+
+.bmi{
+    display:flex;
+    margin-top: .8em;
+    justify-content: center;
+    align-items: center;
+}
+.bmidata{
+    margin-top: 1em;
 }
 
 
@@ -43,6 +54,20 @@
         justify-content: center;
         margin-bottom: 8%;
     }
+    .bmi{
+        display:flex;
+        margin-top: .8em;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmidata{
+        margin-top: 2em;
+    }
+    .myinputs{
+        margin-top: 15%;
+        margin-bottom: 3em; 
+        
+    }
     
 }
 
@@ -57,10 +82,48 @@
         justify-content: center;
         margin-bottom: 10%;
     }
+    .bmi{
+        display:flex;
+        margin-top: .8em;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmidata{
+        margin-top: 2em;
+    }
+    .myinputs{
+        margin-top: 20%;
+        margin-bottom: 3em; 
+        
+    }
    
     
 }
 
 @media screen and (max-width:300px) {
+    .drugspage{
+        justify-content: stretch;
+        width: 100%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 25%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8%;
+    }
+    .bmi{
+        display:flex;
+        margin-top: .8em;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmidata{
+        margin-top: 3em;
+    }
+    .myinputs{
+        margin-top: 20%;
+        margin-bottom: 6em; 
+        
+    }
     
 }
